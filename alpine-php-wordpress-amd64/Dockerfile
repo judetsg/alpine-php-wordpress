@@ -48,7 +48,7 @@ ADD files/run.sh /
 RUN chmod +x /run.sh && \
     curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp-cli && chown nginx:nginx /usr/bin/wp-cli
 
-EXPOSE 80
+EXPOSE 443
 VOLUME ["/usr/html"]
 
 CMD ["/run.sh"]
